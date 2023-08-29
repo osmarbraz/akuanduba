@@ -1,0 +1,109 @@
+mas env.connection {
+
+   agent agenta0: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta0
+   }
+      agent agenta1: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta1
+   }
+      agent agenta2: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta2
+   }
+      agent agenta3: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta3
+   }
+      agent agenta4: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta4
+   }
+   agent agenta5: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta5
+   }
+   agent agenta6: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta6
+   }
+   agent agenta7: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta7
+   }
+   agent agenta8: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta8
+   }
+   agent agenta9: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta9
+   }
+   agent agenta10: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta10
+   }
+   agent agenta11: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta11
+   }
+   agent agenta12: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta12
+   }
+   agent agenta13: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta13
+   }
+   agent agenta14: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta14
+   }
+   agent agenta15: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta15
+   }
+   agent agenta16: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta16
+   }
+   agent agenta17: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta17
+   }
+   agent agenta18: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta18
+   }
+   agent agenta19: agentRandomWalk.asl{
+      join: enva
+      focus: enva.arta19
+   }
+
+   workspace enva {
+      artifact  arta0: connection.EISAccess("clientconf/eisA1.json")
+      artifact  arta1: connection.EISAccess("clientconf/eisA2.json")
+      artifact  arta2: connection.EISAccess("clientconf/eisA3.json")
+      artifact  arta3: connection.EISAccess("clientconf/eisA4.json")
+      artifact  arta4: connection.EISAccess("clientconf/eisA5.json")
+      artifact  arta5: connection.EISAccess("clientconf/eisA6.json")
+      artifact  arta6: connection.EISAccess("clientconf/eisA7.json")
+      artifact  arta7: connection.EISAccess("clientconf/eisA8.json")
+      artifact  arta8: connection.EISAccess("clientconf/eisA9.json")
+      artifact  arta9: connection.EISAccess("clientconf/eisA10.json")
+      artifact  arta10: connection.EISAccess("clientconf/eisA11.json")
+      artifact  arta11: connection.EISAccess("clientconf/eisA12.json")
+      artifact  arta12: connection.EISAccess("clientconf/eisA13.json")
+      artifact  arta13: connection.EISAccess("clientconf/eisA14.json")
+      artifact  arta14: connection.EISAccess("clientconf/eisA15.json")
+      artifact  arta15: connection.EISAccess("clientconf/eisA16.json")
+      artifact  arta16: connection.EISAccess("clientconf/eisA17.json")
+      artifact  arta17: connection.EISAccess("clientconf/eisA18.json")
+      artifact  arta18: connection.EISAccess("clientconf/eisA19.json")
+      artifact  arta19: connection.EISAccess("clientconf/eisA20.json")
+
+   }
+
+
+}
