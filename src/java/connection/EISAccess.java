@@ -1,4 +1,5 @@
 package connection;
+
 import java.util.Collection;
 import java.util.Map;
 
@@ -31,6 +32,9 @@ public class EISAccess extends Artifact implements AgentListener {
     String agtName;
     Translator translator = new Translator();
     
+    /**
+     * Inicializa o artefato
+     */
     void init(String conf) {
         this.ei = new EnvironmentInterface(conf);
 
@@ -70,7 +74,8 @@ public class EISAccess extends Artifact implements AgentListener {
         }
         execInternalOp("getPercepts");
     }
-    /* **
+
+    /**
      * Operação interna do artefato, 
      * a cada 50 milissegundos é feita uma atualização das percepeções
      */
@@ -78,6 +83,7 @@ public class EISAccess extends Artifact implements AgentListener {
         while(true) {
             await_time(50);
             Map<String, PerceptUpdate> perMap;
+            // Obtém as percepções do EISMassim
             if (ei != null) {       
                 try {
                     perMap = ei.getPercepts(this.agtName);                    
